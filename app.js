@@ -7,6 +7,8 @@ const LocalStrategy = require('passport-local').Strategy
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const bcrypt = require('bcryptjs')
+const compression = require('compression')
+const helmet = require('helmet')
 
 mongoose.connect(process.env.DB_HOST, {useUnifiedTopology: true, useNewUrlParser: true})
 const db = mongoose.connection
@@ -55,6 +57,7 @@ passport.deserializeUser((id, done) => {
     })
 })
 
+app.use(compression())
 app.use(session({secret: 'cats', resave: false, saveUninitialized: true}))
 app.use(passport.initialize())
 app.use(passport.session())
