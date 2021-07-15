@@ -57,6 +57,7 @@ passport.deserializeUser((id, done) => {
     })
 })
 
+app.use(helmet())
 app.use(compression())
 app.use(session({secret: 'cats', resave: false, saveUninitialized: true}))
 app.use(passport.initialize())
