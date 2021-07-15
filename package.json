@@ -2,7 +2,7 @@
   "name": "members-only-demo",
   "version": "1.0.0",
   "engines": {
-    "node": "12.18.4"
+    "node": "14.17.0"
   },
   "description": "",
   "main": "app.js",
