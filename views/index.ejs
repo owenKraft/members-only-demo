@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./pieces/head') %>
+    <body>
+        <%- include('./pieces/nav')%>
+        <div class="wrapper">
+            <% if (user){ %>
+                <div class="welcome-back">
+                    Hey <%= user.username %>! 👋
+                </div>
+            <%}%>
+                <% msg_list.forEach(msg => { %>
+                    <%- include('./pieces/message', {msg: msg}) %>
+                <% }) %>
+            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./pieces/head') %>
+    <body>
+        <%- include('./pieces/nav')%>
+
+        <div class="wrapper">
+            <div class="create-msg">
+                <h1>
+                    Leave a note ✍️
+                </h1>
+
+                <form action="" method="POST">
+                    <div class="form-pair">
+                        <label for="title">
+                            Title
+                        </label>
+                
+                        <br>
+
+                        <input name="title" type="text" required/>
+                    </div>
+            
+                    <div class="form-pair">
+                        <label for="note">
+                            Note
+                        </label>
+            
+                        <br>
+            
+                        <textarea name="note" required></textarea>  
+                    </div>
+            
+                    <button>
+                        Leave note
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

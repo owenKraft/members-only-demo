@@ -1,0 +1,31 @@
+<div class="auth">
+    <h1>
+        <%- authType %>
+    </h1>
+
+    <form action="" method="POST">
+        <div class="form-pair">
+            <label for="username">
+                Username
+            </label>
+    
+            <br>
+    
+            <input name="username" type="text" />
+        </div>
+
+        <div class="form-pair">
+            <label for="password">
+                Password
+            </label>
+
+            <br>
+
+            <input name="password" type="password" />
+        </div>
+
+        <button>
+            <%- authType %>
+        </button>
+    </form>
+</div>

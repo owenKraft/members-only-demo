@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  /* font-family: "Roboto",Arial,sans-serif; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input{
+  box-sizing:border-box
+} 
+
+button {
+  background: none;
+  border: none;
+}
+
+/* ^ CSS Reset ^ *//* ^ CSS Reset ^ *//* ^ CSS Reset ^ *//* ^ CSS Reset ^ *//* ^ CSS Reset ^ *//* ^ CSS Reset ^ */
+
+:root {
+    --offwhite: #f9f9f9;
+    --nav-height: 36px;
+}
+
+body {
+    font-family: helvetica,arial,sans-serif;
+    color: #121212;
+}
+
+.nav {
+    height: var(--nav-height);
+    background: var(--offwhite);
+    padding: 4px 15px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.nav h1 {
+    font-family: 'Special Elite', helvetica,arial,sans-serif;
+    font-size: 24px;
+}
+
+.nav h1 a {
+    text-decoration: none;
+}
+
+.nav h1 a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 24px auto;
+    width: 50%;
+}
+
+.welcome-back {
+    margin: 0 0 24px;
+    background: #daf0dd;
+    border-radius: 10px;
+    padding: 24px;
+    font-weight: 600;
+}
+
+.message-wrapper {
+    margin: 0 0 24px;
+}
+
+.message-text {
+    position:relative;
+    background: var(--offwhite);
+    line-height: 1.5rem;
+    font-family: 'Special Elite', helvetica,arial,sans-serif;
+}
+
+.message-text > *, .message-info > * {
+    padding: 24px;
+}
+
+.message-text h2 {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 0;
+}
+
+.message-text:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 16px;
+    /* margin-left: -50px; */
+    width: 0;
+    height: 0;
+    border-top: solid 12px var(--offwhite);
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
+}
+
+.message-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.message-author {
+    font-weight: 600;
+}
+
+.message-timestamp {
+    font-style: italic;
+    color: rgb(114, 114, 114);
+}
+
+.auth-affordances a {
+    margin: 0 0 0 8px;
+    text-decoration: none;
+}
+
+.auth-affordances a:visited {
+    color: inherit
+}
+
+.sign-up-link, .create-msg-link {
+    font-weight: 600;
+}
+
+.auth, .create-msg {
+    background: var(--offwhite);
+    padding: 24px;
+}
+
+.auth h1, .create-msg h1 {
+    /* font-family: 'Special Elite', helvetica,arial,sans-serif; */
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+.auth form > *, .create-msg form > * {
+    margin: 0 0 12px;
+}
+
+.auth form button, .create-msg form button {
+    background: #0275d8;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth form label, .create-msg form label {
+    font-weight: 500;
+}
+
+.auth form input, .create-msg form input, .create-msg form textarea {
+    margin: 6px 0 0;
+    border: darkgray 1px solid;
+    width: 50%;
+}
+
+.create-msg form textarea {
+    width: 100%;
+    height: 100px;
+}

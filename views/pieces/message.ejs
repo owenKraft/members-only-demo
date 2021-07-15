@@ -1,0 +1,38 @@
+<div class="message-wrapper">
+    <div class="message-text">
+        <h2>
+            <% if (msg.title){ %>
+                <%= msg.title %>
+            <% } else {%>
+                Lorem ipsum
+            <% } %>
+        </h2>
+        <p>
+            <% if (msg.body){ %>
+                <%= msg.body %>
+            <% } else {%>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis blandit tincidunt. Nullam porttitor egestas neque, et pharetra nibh maximus sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed imperdiet leo quis elit ornare, ullamcorper finibus enim dictum. Etiam pulvinar commodo tristique. Nunc rhoncus libero et nibh elementum, vel malesuada quam dignissim. Nulla facilisi. Praesent odio mi, pretium quis rutrum vitae, accumsan id nibh. Proin at ipsum fermentum, lobortis sapien non, fermentum felis.
+            <% } %>
+        </p>
+    </div>
+
+    <div class="message-info">
+        <div class="message-author">
+            <% if (msg.username && user){ %>
+                <%= msg.username %>
+            <% } else {%>
+                Anonymous
+            <% } %>
+        </div>
+
+        <div class="message-timestamp">
+            <% if (msg.timestamp){ %>
+                <%= msg.timestamp %>
+            <% } else {%>
+                July 10, 2021
+            <% } %>
+            
+        </div>
+    </div>
+
+</div>

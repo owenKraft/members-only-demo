@@ -1,0 +1,16 @@
+<nav class="nav">
+    <h1>
+        <a href="/">notes from underground</a>
+    </h1>
+    
+    <div class="auth-affordances">
+        <% if (!user){ %>
+            <a href="/log-in">Log in</a>
+            <a class="sign-up-link" href="/sign-up">Sign up</a>
+            
+        <%} else { %>
+            <a class="create-msg-link" href="/create-message">Leave note</a>
+            <a class="log-out-link" href="/log-out">Log out</a>
+        <% } %>
+    </div>
+</nav>
