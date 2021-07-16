@@ -83,6 +83,7 @@ body {
 
 .nav h1 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .nav h1 a:visited {
@@ -154,10 +155,11 @@ body {
 .auth-affordances a {
     margin: 0 0 0 8px;
     text-decoration: none;
+    color: inherit;
 }
 
 .auth-affordances a:visited {
-    color: inherit
+    color: inherit;
 }
 
 .sign-up-link, .create-msg-link {
