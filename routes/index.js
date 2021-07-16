@@ -8,7 +8,7 @@ const authController = require('../controllers/authController')
 const msgController = require('../controllers/msgController')
 
 // GET home page
-router.get('/', (req,res) => 
+router.get('/', (req,res,next) => 
     Message.find()
     .exec((err,list_msgs) => {
         if(err){return next(err)}
